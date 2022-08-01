@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+		<title>Welcome to the app</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="This is the landing page for my fitness app idea. Based on the client feedback, I can begin to construct their customized workout plan.">
+		<link rel="stylesheet" type="text/css" href="Splash.css">
+        
+    </head>
+    <body>
+
+    <header>
+        <div id="banner"class="container">
+          <h1>My Exercise App</h1>
+          <h2>Start by selecting your goal</h2>
+          <div id="button">
+            <a>Choose One</a>
+            <div id="submenu" onclick="function1()">
+              <a href="#" id="Get Stronger" onclick="function2()">Get Stronger</a>
+              <a href="#" id="Look Bigger" onclick="function3()">Look Bigger</a>
+              <a href="#" id="Feel Slimmer" onclick="function4()">Feel Slimmer</a>
+              <a href="#" id="Move Better" onclick="function5()">Move Better</a>
+            </div>
+          </div>
+        </div>
+    </header>
+      <div id="results" class="hidden">
+        <p>What equipment do you have access to?</p>
+        <input type="checkbox" id="Dumbbell">
+        <label for="Dumbbell">Dumbbells</label><br>
+        <input type="checkbox" id="Barbell">
+        <label for="Barbell">Barbells</label><br>
+        <input type="checkbox" id="Kettlebell">
+        <label for="Kettlebell">Kettlebells</label><br>
+        <input type="checkbox" id="Bands">
+        <label for="Bands">Bands</label><br>
+        <input type="checkbox" id="Cable Tower">
+        <label for="Cable Tower">Cable Tower</label><br>
+        <input type="checkbox" id="Machines">
+        <label for="Machines">Machines</label><br>
+        <input type="checkbox" id="Cardio Equipment">
+        <label for="Cardio Equipment">Cardio Equipment</label><br>
+        <input type="checkbox" id="None">
+        <label for="None">None</label><br>
+        <p>How many days a week can you exercise?</p>
+        <input type="radio" id="day3" name="days" value="3">
+        <label for="day3">3</label><br>
+        <input type="radio" id="day4" name="days" value="4">
+        <label for="day4">4</label><br>
+        <input type="radio" id="day5" name="days" value="5">
+        <label for="day5">5</label><br>
+        <input type="radio" id="day6" name="days" value="6">
+        <label for="day6">6</label><br>
+        <p>How long would you like to exercise at one time?</p>
+        <input type="radio" id="20-30" name="time" value="30">
+        <label for="day6">20-30 minutes</label><br>
+        <input type="radio" id="30-40" name="time" value="40">
+        <label for="day6">30-40 minutes</label><br>
+        <input type="radio" id="40-50" name="time" value="50">
+        <label for="day6">40-50 minutes</label><br>
+        <input type="radio" id="50-60" name="time" value="60">
+        <label for="day6">50-60 minutes</label><br>
+        <input type="radio" id="who?" name="time" value="90">
+        <label for="who?">Who's counting?</label><br>
+        <p>What experience do you have with exercising?</p>
+        <input type="text" id="submit" size=30><br>
+      </div>
+      
+      <div id="subResults1" class="hidden">
+        <p>How strong would you say you are?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>What do you want to accomplish in 2 weeks?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>What do you want to accomplish in 6 months?</p>
+        <input type="text" id="who?" size=30><br>
+        <input type="submit" value="Submit">
+      </div>
+      
+      <div id="subResults2" class="hidden">
+        <p>What areas of your body would you improve?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>How much do you eat in a day?</p>
+        <input type="text" id="who?" size=30><br>
+        <input type="submit" value="Submit">
+      </div>
+      
+      <div id="subResults3" class="hidden">
+        <p>How much do you weigh?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>What roadblocks have stopped you previously?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>How would you feel if you accomplished your goal?</p>
+        <input type="text" id="who?" size=30><br>
+        <input type="submit" value="Submit">
+      </div>
+      
+      <div id="subResults4" class="hidden">
+        <p>Do you have any chronic injuries?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>Do you need to consult a physical therapist?</p>
+        <input type="text" id="who?" size=30><br>
+        <p>What problem areas do you have?</p>
+        <input type="text" id="who?" size=30><br>
+        <input type="submit" value="Submit">
+      </div>
+      
+      
+    <section class="features">
+        <div class="container">
+        <div class="feature">
+            <img src="Equipment.png" alt=""/>
+            <p>Customized Based <br>on Your Equipment</p>
+        </div>
+        <div class="feature">
+            <img src="Chart.png" alt=""/>
+            <p>Easy to Track Your Progress</p>
+        </div>
+        <div class="feature">
+            <img src="Bubbles.png" alt=""/>
+            <p>Get Personalized Feedback</p>
+        </div>
+        </div>
+    </section>
+      
+
+
+    <section class="quote">
+        <blockquote class="container">
+          <p>"It's a Great Way to Stay in Shape!"</p>
+          <cite>Satisfied Customer</cite>
+        </blockquote>
+    </section>
+    
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <p>&copy; All rights reserved.</p>
+    </div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="Splash.js"></script>
+</body>
+</html>
